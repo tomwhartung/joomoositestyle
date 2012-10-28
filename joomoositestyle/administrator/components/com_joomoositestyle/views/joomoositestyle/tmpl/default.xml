@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Joomoo Site Style">
+		<message>
+			<![CDATA[This component allows users to set parameters that customize how the site appears]]>
+		</message>
+	</layout>
+	<state>
+		<name>Joomoo Site Style</name>
+		<description>Component allowing users to set site style parameters and customize the appearance of the site
+		</description>
+	</state>
+</metadata>

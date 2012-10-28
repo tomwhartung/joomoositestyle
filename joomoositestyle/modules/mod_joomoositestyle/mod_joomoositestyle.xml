@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site">
+	<name>mod_joomoositestyle</name>
+	<author>Tom Hartung</author>
+	<authorEmail>webmaster@tomhartung.com</authorEmail>
+	<authorUrl>www.tomhartung.com</authorUrl>
+	<creationDate>May 2009</creationDate>
+	<copyright>Copyright (C) 2009-2012 Tom Hartung. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.7</version>
+	<description>Allows changing of template parameters</description>
+	<files>
+		<filename module="mod_joomoositestyle">mod_joomoositestyle.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_joomoositestyle.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_font_size" type="radio" default="1" label="Enable changing font size?"
+					description="Set to Yes to allow users of this module to change the font size">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="font_size_type" type="radio" default="D" label="Use dropdown or slider to change font size?"
+					description="Choose which type of input control to use when changing the font size">
+					<option value="D">Dropdown</option>
+					<option value="S">Slider</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="show_background" type="radio" default="1" label="Enable changing background?"
+					description="Set to Yes to allow users of this module to change the background">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_border_color" type="radio" default="1" label="Enable changing border color?"
+					description="Set to Yes to allow users of this module to change the border color">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_border_style" type="radio" default="1" label="Enable changing border style?"
+					description="Set to Yes to allow users of this module to change the border style">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="show_border_width" type="radio" default="1" label="Enable changing border width?"
+					description="Set to Yes to allow users of this module to change the border width">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="border_width_type" type="radio" default="D" label="Use dropdown or slider to change border width?"
+					description="Choose which type of input control to use when changing the border width">
+					<option value="D">Dropdown</option>
+					<option value="S">Slider</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="show_reset_all" type="radio" default="1" label="Enable resetting all params to default?"
+					description="Set to Yes to allow users of this module to reset all params to default">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

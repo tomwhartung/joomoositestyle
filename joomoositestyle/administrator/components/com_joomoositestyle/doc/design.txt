@@ -1,0 +1,54 @@
+
+         joomoositestyle Component and Template Design          Tom Hartung
+        ===============================================         February, 2010
+
+
+Design Overview
+---------------
+Following is a list of the most important functional elements of this component:
+Back End (adminstrator/components/com_joomoositestyle/*)
+    Minimal MVC component, used to set site name and tag line only
+Template (templates/joomoositestyle/*)
+    Template for entire site
+        css/headings/*.css:     implements blue, green, red, or yellow headings
+        css/inputs/*.css:       implements blue, green, red, or yellow inputs
+        css/links/*.css:        implements blue, green, red, or yellow links
+        css/ieonly.css:         to support Internet Explorer
+        css/template.css:       styles used by template regardless of parms or browser
+        css/template_rtl.css:   used to support rendering in a right-to-left direction
+        images/background.jpg:  background used on all pages when "image" is selected
+        images/bullets/*/*.gif: arrows used for unordered lists, match color used for headings
+        images/logo.gif:        logo that appears in heading on all pages
+        index.php:              actual template used for all pages
+        javascript/JoomooSitestyle.js: sets style parameters using cookies and events 
+        params.ini:             contains choices used for colors of headings and links (set in back end)
+        templateDetails.xml:    used for installation (and...?)
+Front End (components/com_joomoositestyle/*)
+    Minimal MVC component, used to allow user to set template parameters
+        assets/addEvents.js: adds events allowing user to see how selected parameters change look
+        assets/joomoositestyle.css: styles used on the template parameters page only
+        assets/ViewFunctions.js: defines javascript functions used to layout page
+        views/joomoositestyle/tmpl: defines layout of page
+
+Overview of Control Flow in the Back End
+----------------------------------------
+Following is a high-level description of how this component uses the joomla! MVC framework.
+All file names are relative to administrator/components/com_joomoositestyle
+1. framework loads admin.joomoositestyle.php
+2. admin.joomoositestyle.php passes control to display() method in controller.php
+3. controller->display() method performs actions appropriate for the specified task
+4. control passes to view class which may perform appropriate initialization steps
+5. control passes to view template which produces the output which appears in the content area
+   --> view template is in views/joomoositestyle/tmpl/default.php
+
+Overview of Control Flow in the Front End
+-----------------------------------------
+Following is a high-level description of how this component uses the joomla! MVC framework.
+All file names are relative to components/com_joomoositestyle
+1. framework loads joomoositestyle.php
+2. joomoositestyle.php passes control to display() method in controller.php
+3. controller->display() method performs actions appropriate for the specified task
+4. control passes to view class which may perform appropriate initialization steps
+5. control passes to view template which produces the output which appears in the content area
+   --> view template is in views/joomoositestyle/tmpl/default.php
+

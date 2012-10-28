@@ -1,0 +1,21 @@
+/**
+ * @version     $Id: background_image.css,v 1.1 2009/04/29 23:07:01 tomh Exp tomh $
+ * @author      Tom Hartung <webmaster@tomhartung.com>
+ * @package     Joomla
+ * @subpackage  JoomooSitestyle
+ * @copyright   Copyright (C) 2010 Tom Hartung. All rights reserved.
+ * @since       1.5
+ * @license     GNU/GPL, see LICENSE.php
+ */
+
+/*
+ * Path to background image file:
+ * ------------------------------
+ * Needed when user has javascript turned off in browser and the default background is the image
+ */
+body
+{
+   background-color: black;           /* in case background-dark.jpg goes missing */
+   background-attachment: fixed;
+   background-image: url("../images/background.jpg");
+}

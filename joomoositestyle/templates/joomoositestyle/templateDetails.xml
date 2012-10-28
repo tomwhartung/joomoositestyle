@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/1.7/template-install.dtd">
+<extension version="1.7.3" type="template" client="site">
+	<name>joomoositestyle</name>
+	<creationDate>5/30/2008</creationDate>
+	<author>Tom Hartung</author>
+	<authorEmail>webmaster@tomhartung.com</authorEmail>
+	<authorUrl>http://www.tomhartung.com</authorUrl>
+	<copyright>Copyright (C) 2009-2012 Tom Hartung. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.7</version>
+	<description>
+		JoomooSitestyle template, component, and module - allows users to customize appearance of site
+	</description>
+	<files>
+		<folder>assets</folder>
+		<folder>classes</folder>
+		<folder>controllers</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>models</folder>
+		<folder>requests</folder>
+		<folder>tables</folder>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>params.ini-groja.com</filename>
+		<filename>params.ini-joomoowebsites.com</filename>
+		<filename>params.ini-seeourminds.com</filename>
+		<filename>params.ini-tomhartung.com</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>header_left</position>
+		<position>header_right</position>
+		<position>tiptop</position>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>bannerbottom</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="heading_color" type="list" default="red" label="Heading Color"
+				       description="Color to use for headings; should be different than links">
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="yellow">Yellow</option>
+				</field>
+				<field name="link_color" type="list" default="yellow" label="Link Color"
+				       description="Color to use for links; should be different than headings">
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="yellow">Yellow</option>
+				</field>
+				<field name="bullet_color" type="list" default="green" label="Bullet Color"
+				       description="Color to use for bullets; match to headings (or links)">
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="yellow">Yellow</option>
+				</field>
+				<field name="input_color" type="list" default="blue" label="Input Element Color"
+				       description="Color to use for input elements; match to links (or headings)">
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="yellow">Yellow</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="tag_line_above" type="text" default="tag line above" label="Tag Line Above"
+				       description="Tag line above site name, for header on all pages">
+				</field>
+				<field name="site_name" type="text" default="site name (set in back end)" label="Site Name"
+				       description="Name of site, for header on all pages">
+				</field>
+				<field name="tag_line_below" type="text" default="tag line below" label="Tag Line Below"
+				       description="Tag line below site name, for header on all pages">
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="save_by_ip" type="radio" default="0" label="Save by IP?"
+				       description="Set to Yes to allow saving of parameters for non-logged in users in DB (by ip address)">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="default_background" type="list" default="dark_blue" label="Default Background Color"
+				       description="Default Background Color - user may override if component or module is enabled">
+					<option value="image">Image</option>
+					<option value="black">Black</option>
+					<option value="dark_blue">Dark Blue</option>
+					<option value="dark_red">Dark Red</option>
+					<option value="very_dark_green">Very Dark Green</option>
+					<option value="very_dark_grey">Very Dark Grey</option>
+					<option value="navy_blue">Navy Blue</option>
+					<option value="dark_green">Dark Green</option>
+					<option value="seal_brown">Seal Brown</option>
+					<option value="tyrian_purple">Tyrian Purple</option>
+					<option value="persian_indigo">Persian Indigo</option>
+					<option value="bistre">Bistre</option>
+					<option value="dark_scarlet">Dark Scarlet</option>
+					<option value="army_green">Army Green</option>
+					<option value="sapphire">Sapphire</option>
+					<option value="falu_red">Falu Red</option>
+				</field>
+				<field name="default_border_color_name" type="list" default="dark_blue" label="Default Border Color"
+				       description="Default Border Color - user may override if component or module is enabled">
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="red">Red</option>
+					<option value="yellow">Yellow</option>
+					<option value="black">Black</option>
+					<option value="cobalt">Cobalt</option>
+					<option value="pine_green">Pine Green</option>
+					<option value="dark_slate_grey">Dark Slate Grey</option>
+					<option value="slate_grey">Slate Grey</option>
+					<option value="maroon">Maroon</option>
+					<option value="grey">Grey</option>
+					<option value="violet">Violet</option>
+					<option value="silver">Silver</option>
+					<option value="shocking_pink">Shocking Pink</option>
+					<option value="orange_red">Orange Red</option>
+					<option value="white">White</option>
+				</field>
+				<field name="default_border_style" type="list" default="dark_blue" label="Default Border Style"
+				       description="Default Border Style - user may override if component or module is enabled">
+					<option value="groove">Groove</option>
+					<option value="ridge">Ridge</option>
+					<option value="double">Double</option>
+					<option value="inset">Inset</option>
+					<option value="outset">Outset</option>
+					<option value="solid">Solid</option>
+					<option value="dashed">Dashed</option>
+					<option value="dotted">Dotted</option>
+					<option value="none">None</option>
+				</field>
+				<field name="default_border_width" type="list" default="8" label="Default Border Width"
+				       description="Default Border Width - user may override if component or module is enabled">
+					<option value="0">0px</option>
+					<option value="1">1px</option>
+					<option value="2">2px</option>
+					<option value="3">3px</option>
+					<option value="4">4px</option>
+					<option value="5">5px</option>
+					<option value="6">6px</option>
+					<option value="7">7px</option>
+					<option value="8">8px</option>
+					<option value="9">9px</option>
+					<option value="10">10px</option>
+					<option value="11">11px</option>
+					<option value="12">12px</option>
+					<option value="13">13px</option>
+					<option value="14">14px</option>
+					<option value="15">15px</option>
+					<option value="16">16px</option>
+					<option value="17">17px</option>
+					<option value="18">18px</option>
+					<option value="19">19px</option>
+					<option value="20">20px</option>
+					<option value="21">21px</option>
+					<option value="22">22px</option>
+					<option value="23">23px</option>
+					<option value="24">24px</option>
+					<option value="25">25px</option>
+					<option value="26">26px</option>
+					<option value="27">27px</option>
+					<option value="28">28px</option>
+					<option value="29">29px</option>
+					<option value="30">30px</option>
+				</field>
+				<field name="default_font_size" type="list" default="85" label="Default Font Size"
+				       description="Default Font Size - user may override if component or module is enabled">
+					<option value="60">60%</option>
+					<option value="65">65%</option>
+					<option value="70">70%</option>
+					<option value="75">75%</option>
+					<option value="80">80%</option>
+					<option value="85">85%</option>
+					<option value="90">90%</option>
+					<option value="95">95%</option>
+					<option value="100">100%</option>
+					<option value="105">105%</option>
+					<option value="110">110%</option>
+					<option value="115">115%</option>
+					<option value="120">120%</option>
+					<option value="125">125%</option>
+					<option value="130">130%</option>
+					<option value="135">135%</option>
+					<option value="140">140%</option>
+					<option value="145">145%</option>
+					<option value="150">150%</option>
+					<option value="155">155%</option>
+					<option value="160">160%</option>
+					<option value="165">165%</option>
+					<option value="170">170%</option>
+					<option value="175">175%</option>
+					<option value="180">180%</option>
+					<option value="185">185%</option>
+					<option value="190">190%</option>
+					<option value="195">195%</option>
+					<option value="200">200%</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

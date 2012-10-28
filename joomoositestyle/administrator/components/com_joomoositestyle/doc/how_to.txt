@@ -1,0 +1,101 @@
+
+         JoomooSitestyle Component and Template How-to          Tom Hartung
+        ===============================================         February, 2010
+
+Description
+-----------
+The joommoo site style component and template work together to enable users
+to change the appearance of a website based on the joomla! CMS.
+
+The PHP code in these extensions is based on joomla!'s Model-View-Controller (MVC)
+API and is fairly minimal.  Most of the functionality is in the javascript files.
+
+This component does not use the database.
+
+Installation Directories
+------------------------
+adminstrator/components/com_joomoositestyle/ - back end component
+templates/joomoositestyle/ - template
+components/com_joomoositestyle/ - front end component
+
+----------------------------------------------
+*** Before Giving This Component to Others ***
+----------------------------------------------
+Change or at least remove these files:
+    templates/joomoositestyle/images/background.jpg
+    templates/joomoositestyle/images/logo.gif
+    templates/joomoositestyle/images/unused_images/*
+----------------------------------------------
+----------------------------------------------
+
+Installation Procedure
+----------------------
+This component was developed and tested on a Linux system (Gentoo) running the latest
+versions of:
+o  apache  (2.2.9-r1 - latest version as of 2008-10-29)
+o  joomla! (1.5.7 - latest version as of 2008-10-29)
+o  mootools (1.11 - version included in joomla! as of 2008-10-29)
+o  mysql 5 (5.0.60-r1 - latest version as of 2008-10-29)
+o  php 5   (5.2.6-r7 - latest version as of 2008-10-29)
+*** MORE DETAILS COMING SOON ***
+*** MORE DETAILS COMING SOON ***
+   See gloria:~/personal/linux/gentoo/lizabeth/joomla-setup.sh
+   (last part where we bring tomhartung.com up-to-date)
+*** MORE DETAILS COMING SOON ***
+*** MORE DETAILS COMING SOON ***
+
+Adding a Template Parameters Menu Item
+--------------------------------------
+How to add a menu item to the main menu (after installing all files):
+    Back end -> Menus -> Main Menu -> New -> Template Parameters -> Template Parameters
+    Fill in form and click on Save
+
+Changing the background and logo images
+---------------------------------------
+To change the images:
+    background file is templates/joomoositestyle/background.jpg
+    logo file is templates/joomoositestyle/logo.gif
+To change the image file names:
+    Change file names near top of main css file:
+        templates/joomoositestyle/css/template.css
+    Change background file name (JoomooSitestyle.backgroundImage) in
+        templates/joomoositestyle/javascript/JoomooSitestyle.js
+
+Changing the Default Values
+---------------------------
+Default values are set in the top of the following file:
+    templates/joomoositestyle/javascript/JoomooSitestyle.js
+Note that the code assumes that default values are valid!
+
+Adding Background and Border Colors
+-----------------------------------
+To add background and border colors, change the following files:
+    templates/joomoositestyle/javascript/JoomooSitestyle.js
+        add color value to list of background or border colors
+        add color name to array of background or border colors
+    components/com_joomoositestyle/assets/addEvents.js
+        add event for background or border color to appropriate event group
+--> Note that there is NO NEED TO CHANGE ANY HTML, because the functions in
+    components/com_joomoositestyle/assets/ViewFunctions.js use the arrays
+    to generate the necessary HTML.
+
+Configuration Files
+-------------------
+administrator/components/com_joomoositestyle/config.xml
+    defines site name and tag line - used in header of all pages
+    to change: use backend -> Components -> Template Parameters -> Parameters
+administrator/components/com_joomoositestyle/joomoositestyle.xml
+    used for installation
+administrator/components/com_joomoositestyle/views/joomoositestyle/tmpl/default.xml
+    used for configuring menu item
+templates/joomoositestyle/params.ini
+    defines heading, input, and link colors
+    to change: backend -> Extensions -> Template Manager -> joomoositestyle -> Parameters
+    --> for changes to take effect, params.ini must be writable
+templates/joomoositestyle/templateDetails.xml
+    defines options available for heading, input, and link colors (among many other things)
+    *** For best results ensure that the list of positions in this file includes
+    *** all of the positions in the template you are currently using.
+    --> Check which positions are being used by going to:
+           Backend -> Extensions -> Module Manager (see Position column)
+

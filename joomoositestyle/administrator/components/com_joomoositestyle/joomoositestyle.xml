@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7">
+	<name>com_joomoositestyle</name>
+	<creationDate>May 2010</creationDate>
+	<author>Tom Hartung</author>
+	<authorEmail>webmaster@tomhartung.com</authorEmail>
+	<authorUrl>tomhartung.com</authorUrl>
+	<copyright>Copyright (C) 2009-2012 Tom Hartung. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.7</version>
+	<description>Allows user to change appearance of site by setting parameters</description>
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>joomoositestyle.php</filename>
+		<filename>metadata.xml</filename>
+		<folder>assets</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu>Joomoo Site Style</menu>
+		<files folder="admin">
+			<filename>admin.joomoositestyle.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>toolbar.templatejoomoositestyle.html.php</filename>
+			<filename>toolbar.templatejoomoositestyle.php</filename>
+			<folder>controllers</folder>
+			<folder>doc</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+	<install />
+	<uninstall />
+</extension>

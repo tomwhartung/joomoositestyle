@@ -1,0 +1,150 @@
+/**
+ * @version     $Id: joomoositestyle.css,v 1.16 2009/05/13 23:07:12 tomh Exp tomh $
+ * @author      Tom Hartung <webmaster@tomhartung.com>
+ * @package     Joomla
+ * @subpackage  joomoositestyle
+ * @copyright   Copyright (C) 2008 Tom Hartung. All rights reserved.
+ * @since       1.5
+ * @license     GNU/GPL, see LICENSE.php
+ */
+/*
+ * Styles used only on this page
+ * -----------------------------
+ * If you want to use these elsewhere
+ *    you should move them to the main templates/<template_name>/css/template.css file
+ */
+
+/*
+ * For accordion effects (copied and modified from mootools Accordion demo)
+ * ------------------------------------------------------------------------
+ */
+#accordion
+{
+	margin:20px 0px;
+}
+
+h4.toggler
+{
+   cursor: pointer;
+}
+/*
+ * For aesthetics only (non-accordion)
+ * -----------------------------------
+ */
+h4.toggler,
+h4.joomoositestyle
+{
+   margin-top:     6px;
+   margin-left:   10px;
+   margin-bottom:  0px;
+}
+p.joomoositestyle
+{
+   margin-top:     6px;
+   margin-left:   20px;
+   margin-bottom:  0px;
+}
+p.noscript
+{
+   font-size:     larger;
+}
+div.noscript
+{
+   border:         3px dashed red;
+   margin-top:    16px;
+   margin-left:   30px;
+   margin-right:  30px;
+   margin-bottom: 10px;
+   padding:        7px;
+}
+
+span.current_value
+{
+   font-weight: bold;
+}
+
+table.font_size, table.background,
+table.border_color_name, table.border_style,
+table.change_border_width, table.set_border_width
+{
+   margin-left: 30px;
+   padding: 5px;
+}
+
+table.font_size
+{
+   width: 75%;
+}
+th.font_size,
+th.change_border_width
+{
+   border: 1px solid white;
+   padding: 5px;
+   text-align: center;
+}
+td.font_size_left, td.font_size_center, td.font_size_right,
+td.change_border_width_left, td.change_border_width_center, td.change_border_width_right
+{
+   border-bottom: 1px solid white;
+   padding: 5px;
+   text-align: center;
+   white-space: nowrap;
+}
+td.font_size_left, td.font_size_center, td.font_size_right
+{
+   width: 11%;
+}
+td.font_size_left,
+td.change_border_width_left
+{
+   border-left: 1px solid white;
+}
+td.font_size_right,
+td.change_border_width_right
+{
+   border-right: 1px solid white;
+}
+
+table.background
+{
+   width: 100%;
+}
+td.background,
+td.set_border_width
+{
+   border: 1px solid white;
+   padding: 5px;
+   text-align: center;
+}
+td.background
+{
+   width:  20%;
+}
+
+table.border_color_name, table.border_style
+{
+   border-collapse: separate;
+   border-spacing: 8px;
+   width: 75%;
+}
+td.border_color_name, td.border_style
+{
+   border: 5px double white;
+   padding: 5px;
+   text-align: center;
+   width:  20%;
+}
+
+table.change_border_width,
+table.set_border_width
+{
+   width: 75%;
+}
+td.change_border_width_left, td.change_border_width_center, td.change_border_width_right
+{
+   width: 7%;
+}
+td.set_border_width
+{
+   width: 10%;
+}
